@@ -1,0 +1,10 @@
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    var name = prompt('Who are you?');
+    
+  var socket = io.connect('http://anime.wetfish.net:1024');
+  socket.on('connected', function (data) {
+    console.log(data);
+    socket.emit('name', { name: name });
+  });
+</script>
