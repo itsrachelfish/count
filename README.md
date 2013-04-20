@@ -1,4 +1,4 @@
-count
+Who's there?
 =====
 
-county count, who's there?
+A super simple node + express + socket.io app to count the number of users currently connected to a page.
