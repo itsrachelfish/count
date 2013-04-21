@@ -18,7 +18,7 @@ function getDate()
     return day+'-'+month+'-'+year+' '+hour+':'+min+':'+sec;
 }
 
-server.listen(1024);
+server.listen(1025);
 
 app.use(express.static(__dirname + '/static'));
 

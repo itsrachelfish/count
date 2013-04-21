@@ -3,12 +3,7 @@
 
 <script>
     var socket = io.connect('http://count.wetfish.net');
-   
-    socket.on('connected', function(data)
-    {
-        socket.emit('connected');
-    });
-    
+       
     socket.on('count', function(data)
     {
         if(data.users == 1)
